@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"> <!-- Inter font -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="chatgpt.png" alt="ChatGPT Logo" class="chatgpt-logo"> ChatGPT <!-- Replace with actual logo path -->
+        </div>
+        <nav>
+            <a href="#" class="sidebar-item"><i class="fas fa-robot"></i> Explore GPTs</a>
+            <div class="section-title">Today</div>
+            <a href="#" class="sidebar-subitem"><i class=""></i> Logo Design Request</a>
+            <a href="#" class="sidebar-subitem"><i class=""></i> Current Affairs</a>
+        </nav>
+        <div class="upgrade-section">
+            <button class="upgrade-button">Upgrade Plan</button>
+        </div>
+    </aside>
+
+    <main class="chat-area">
+        <header class="chat-header">
+            <i class="fas fa-comments"></i> ChatGPT
+        </header>
+
+        <section class="chat-content" id="chat-content">
+            <h1 class="intro-text">What can I help with?</h1>
+            <div class="chat-messages" id="chat-messages"></div>
+        </section>
+
+        <footer class="input-section">
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Message ChatGPT" aria-label="User input" />
+                <button onclick="sendMessage()" aria-label="Send message">&#9658;</button>
+            </div>
+            <div class="action-buttons">
+                <button aria-label="Create image"><i class="fas fa-image"></i> Create Image</button>
+                <button aria-label="Summarize text"><i class="fas fa-file-alt"></i> Summarize Text</button>
+                <button aria-label="Help me write"><i class="fas fa-pencil-alt"></i> Help Me Write</button>
+                <button aria-label="Code assistance"><i class="fas fa-code"></i> Code</button>
+                <button aria-label="More options"><i class="fas fa-ellipsis-h"></i> More</button>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
